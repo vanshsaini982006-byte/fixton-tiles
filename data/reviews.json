@@ -1,0 +1,119 @@
+[
+  {
+    "id": 1,
+    "productSlug": "carrara-white",
+    "name": "Neha Sharma",
+    "rating": 5,
+    "title": "Looks far more expensive than it is",
+    "comment": "We used it in the living room, about 40 sqm. The veining is subtle and the colour matched the sample very closely. The fitter said the edges were straight and the sizes consistent.",
+    "createdAt": "2026-08-14T10:20:00.000Z"
+  },
+  {
+    "id": 2,
+    "productSlug": "carrara-white",
+    "name": "Rohit Verma",
+    "rating": 4,
+    "title": "Good tile, shows footprints",
+    "comment": "Very happy with the finish but a polished floor does show dust and footprints. Keep a mop handy. Delivery was on time.",
+    "createdAt": "2026-09-02T16:05:00.000Z"
+  },
+  {
+    "id": 3,
+    "productSlug": "urban-concrete",
+    "name": "Ankit Gupta",
+    "rating": 5,
+    "title": "Exactly the concrete look I wanted",
+    "comment": "Used it for a small office. Matt surface hides marks well and cleaning is simple. Good value for a porcelain tile.",
+    "createdAt": "2026-08-28T09:40:00.000Z"
+  },
+  {
+    "id": 4,
+    "productSlug": "oak-plank-natural",
+    "name": "Pooja Agarwal",
+    "rating": 5,
+    "title": "Wood look without the worry",
+    "comment": "We have two dogs and wanted wood but not the scratches. These planks look natural and there are enough shade variations that it does not look printed.",
+    "createdAt": "2026-09-09T12:15:00.000Z"
+  },
+  {
+    "id": 5,
+    "productSlug": "oak-plank-natural",
+    "name": "Imran Khan",
+    "rating": 4,
+    "title": "Order a little extra",
+    "comment": "Planks are long, so cutting at the edges wastes more than normal tiles. Order at least 10 percent extra. The look is lovely.",
+    "createdAt": "2026-09-16T18:30:00.000Z"
+  },
+  {
+    "id": 6,
+    "productSlug": "pebble-grip-grey",
+    "name": "Sunita Devi",
+    "rating": 5,
+    "title": "Safe for my parents",
+    "comment": "Put this in the bathroom for my parents. It is properly grippy when wet but still easy to scrub. Worth it.",
+    "createdAt": "2026-08-19T07:55:00.000Z"
+  },
+  {
+    "id": 7,
+    "productSlug": "hex-mosaic-mono",
+    "name": "Karan Malhotra",
+    "rating": 4,
+    "title": "Beautiful but needs a patient fitter",
+    "comment": "The pattern looks great in the shower area. Laying mosaic takes longer so check your fitter's rate first. The sheets were well packed.",
+    "createdAt": "2026-09-21T14:10:00.000Z"
+  },
+  {
+    "id": 8,
+    "productSlug": "subway-white-gloss",
+    "name": "Meera Joshi",
+    "rating": 5,
+    "title": "Kitchen splashback done",
+    "comment": "Laid it in a brick pattern behind the hob. Wipes clean after cooking and the bevel catches the light nicely.",
+    "createdAt": "2026-09-05T11:00:00.000Z"
+  },
+  {
+    "id": 9,
+    "productSlug": "graphite-matt",
+    "name": "Vikas Tyagi",
+    "rating": 4,
+    "title": "Hides everything",
+    "comment": "Dark floors usually show every speck but this matt finish is forgiving. Slightly darker than the website swatch, so look at a real sample first.",
+    "createdAt": "2026-09-12T19:45:00.000Z"
+  },
+  {
+    "id": 10,
+    "productSlug": "granite-grey-grip",
+    "name": "Rajesh Saini",
+    "rating": 5,
+    "title": "Steps and driveway, no slipping",
+    "comment": "Used it on the front steps and the porch. It has been through the rain and still grips well. Heavy tiles, so arrange unloading help.",
+    "createdAt": "2026-08-30T08:20:00.000Z"
+  },
+  {
+    "id": 11,
+    "productSlug": "calacatta-gold",
+    "name": "Divya Mittal",
+    "rating": 5,
+    "title": "Statement floor",
+    "comment": "The large format is the whole point. Very few joints and the gold veining looks different on every tile. Make sure the floor is level first.",
+    "createdAt": "2026-09-25T13:35:00.000Z"
+  },
+  {
+    "id": 12,
+    "productSlug": "terrace-wood-grip",
+    "name": "Amit Chauhan",
+    "rating": 4,
+    "title": "Good terrace decking alternative",
+    "comment": "Looks like timber and stays cool enough underfoot in the afternoon sun. The planks need proper support when laid on pedestals.",
+    "createdAt": "2026-09-27T10:05:00.000Z"
+  },
+  {
+    "id": 13,
+    "productSlug": "metro-cream",
+    "name": "Shalini Rawat",
+    "rating": 3,
+    "title": "Nice colour, a few chipped edges",
+    "comment": "The cream colour is lovely and warmer than white. Two tiles in our box had chipped corners. The team replaced them without fuss.",
+    "createdAt": "2026-09-18T15:25:00.000Z"
+  }
+]

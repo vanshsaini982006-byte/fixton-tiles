@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+{{head}}
+<title>Contact Us and Get a Tile Quote | {{brand}}</title>
+<meta name="description" content="Send us your tile requirement and area for a quote, or ask for help choosing. Reply by phone or WhatsApp.">
+<!--head-extra-->
+</head>
+<body data-page="contact">
+{{header}}
+
+<main id="main">
+  <div class="wrap">
+    <div class="page-title">
+      <div class="rule"></div>
+      <h1>Get a <span class="gold">quote</span></h1>
+      <p>Tell us what you are tiling and roughly how much. We will call you back with prices and suggestions.</p>
+    </div>
+
+    <div class="two-col wide-left" style="padding-bottom:80px">
+      <form class="form" id="contact-form">
+        <div style="margin-bottom:14px">
+          <label class="field-label" for="e-type">What is this about?</label>
+          <select id="e-type" name="type">
+            <option value="quote">Price quote</option>
+            <option value="help">Help choosing tiles</option>
+            <option value="bulk">Bulk or dealer order</option>
+            <option value="other">Something else</option>
+          </select>
+        </div>
+        {{enquiryFields}}
+      </form>
+
+      <aside class="contact-side">
+        <h3 class="gold" style="margin-bottom:10px">Prefer to chat?</h3>
+        <p>Message us on WhatsApp with your room size or a photo of the space.</p>
+        <a class="btn" href="#" data-wa data-wa-text="Hi, I'd like a quote for tiles." style="margin-bottom:22px">Open WhatsApp</a>
+        <p>Phone: <a href="tel:{{phoneTel}}">{{phone}}</a></p>
+        <p>Email: <a href="mailto:{{email}}">{{email}}</a></p>
+        <p>Or <a href="/stores">visit a showroom</a>.</p>
+      </aside>
+    </div>
+  </div>
+</main>
+
+{{footer}}
+{{scripts}}
+<script>
+  // the type can be preset from a link, e.g. /contact?type=bulk
+  document.addEventListener('DOMContentLoaded', function () {
+    var t = new URLSearchParams(location.search).get('type');
+    var select = document.getElementById('e-type');
+    if (t && select.querySelector('option[value="' + t.replace(/[^a-z]/g, '') + '"]')) select.value = t.replace(/[^a-z]/g, '');
+    FX.bindEnquiryForm(document.getElementById('contact-form'));
+  });
+</script>
+</body>
+</html>

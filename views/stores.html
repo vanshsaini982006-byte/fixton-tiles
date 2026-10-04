@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+{{head}}
+<title>Find a Tile Store Near You | {{brand}}</title>
+<meta name="description" content="Find a Fixton Tiles showroom or dealer point near you. Search by city or pincode, see opening hours and get directions.">
+<!--head-extra-->
+</head>
+<body data-page="stores">
+{{header}}
+
+<main id="main">
+  <div class="wrap">
+    <div class="page-title">
+      <div class="rule"></div>
+      <h1>Find a <span class="gold">store</span></h1>
+      <p>See the tiles in person before you order. Search by city or pincode, or let your phone find the nearest one.</p>
+    </div>
+
+    <div class="toolbar">
+      <div class="search">
+        <label class="field-label" for="store-search">City or pincode</label>
+        <input type="search" id="store-search" placeholder="e.g. Agra or 282002" autocomplete="off">
+      </div>
+      <div style="align-self:end"><button type="button" class="btn btn-ghost" id="near-me">Use my location</button></div>
+    </div>
+    <p class="form-status" id="near-status" role="status"></p>
+
+    <div class="stores">
+      <div class="store-list" id="store-list"></div>
+      <div class="map-box" id="map-box">
+        <iframe id="map" title="Map of the selected store" loading="lazy"></iframe>
+        <div class="map-info" id="map-info"></div>
+      </div>
+    </div>
+  </div>
+  <div style="height:70px"></div>
+</main>
+
+{{footer}}
+{{scripts}}
+<script src="/js/stores.js" defer></script>
+</body>
+</html>

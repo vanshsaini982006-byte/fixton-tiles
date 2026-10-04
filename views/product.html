@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+{{head}}
+<title>Tile | {{brand}}</title>
+<meta name="description" content="Tile details, specifications and price.">
+<!--head-extra-->
+</head>
+<body data-page="catalogue">
+{{header}}
+
+<main id="main">
+  <div class="wrap">
+    <nav class="crumbs" aria-label="Breadcrumb">
+      <a href="/">Home</a> / <a href="/catalogue">Collections</a> / <span id="crumb-cat"></span> / <span id="crumb-name"></span>
+    </nav>
+
+    <div id="product"><div class="skeleton" style="margin:30px 0;min-height:420px"></div></div>
+  </div>
+
+  <section class="section">
+    <div class="wrap">
+      <div class="section-head">
+        <div><div class="rule"></div><h2>Customer <span class="gold">reviews</span></h2></div>
+      </div>
+      <div class="reviews">
+        <div id="review-summary"></div>
+        <div>
+          <div id="review-list"></div>
+          <form class="review-form" id="review-form" novalidate>
+            <h3>Write a review</h3>
+            <div class="form-grid">
+              <div class="full">
+                <span class="field-label" id="rating-label">Your rating *</span>
+                <div class="star-pick" role="radiogroup" aria-labelledby="rating-label">
+                  <label><input type="radio" name="rating" value="5"><span>5 - Excellent</span></label>
+                  <label><input type="radio" name="rating" value="4"><span>4 - Good</span></label>
+                  <label><input type="radio" name="rating" value="3"><span>3 - Okay</span></label>
+                  <label><input type="radio" name="rating" value="2"><span>2 - Poor</span></label>
+                  <label><input type="radio" name="rating" value="1"><span>1 - Bad</span></label>
+                </div>
+              </div>
+              <div>
+                <label class="field-label" for="r-name">Your name *</label>
+                <input id="r-name" name="name" type="text" maxlength="60" autocomplete="name">
+              </div>
+              <div>
+                <label class="field-label" for="r-title">Headline</label>
+                <input id="r-title" name="title" type="text" maxlength="80" placeholder="Optional">
+              </div>
+              <div class="full">
+                <label class="field-label" for="r-comment">Your review *</label>
+                <textarea id="r-comment" name="comment" maxlength="600" placeholder="Where did you use it? How was the finish and delivery?"></textarea>
+              </div>
+            </div>
+            <div class="hp" aria-hidden="true"><label>Leave this empty <input name="website" type="text" tabindex="-1" autocomplete="off"></label></div>
+            <p class="form-status" id="review-status" role="alert"></p>
+            <div class="form-actions"><button class="btn btn-sm" type="submit">Post review</button></div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="related-section" hidden>
+    <div class="wrap">
+      <div class="section-head">
+        <div><div class="rule"></div><h2>You may also <span class="gold">like</span></h2></div>
+      </div>
+      <div class="grid grid-4" id="related"></div>
+    </div>
+  </section>
+</main>
+
+<dialog id="quote-dialog" class="dialog" aria-labelledby="quote-title">
+  <div class="dialog-head">
+    <h2 id="quote-title">Get a quote</h2>
+    <button type="button" class="link-btn" data-close>Close</button>
+  </div>
+  <p class="muted" id="quote-for"></p>
+  <form class="form" id="quote-form">
+    <input type="hidden" name="type" value="quote">
+    {{enquiryFields}}
+  </form>
+</dialog>
+
+{{footer}}
+{{scripts}}
+<script src="/js/product.js" defer></script>
+</body>
+</html>

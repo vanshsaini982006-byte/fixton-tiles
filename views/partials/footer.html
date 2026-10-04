@@ -1,0 +1,62 @@
+<footer class="site-footer">
+  <div class="wrap foot-grid">
+    <div>
+      <a class="brand" href="/">FIXTON <span>TILES</span></a>
+      <p class="foot-note">{{tagline}} Browse the range online, then visit a showroom or send us your measurements for a quote.</p>
+    </div>
+    <div>
+      <h4>Collections</h4>
+      <ul>
+        <li><a href="/catalogue?category=floor">Floor tiles</a></li>
+        <li><a href="/catalogue?category=wall">Wall tiles</a></li>
+        <li><a href="/catalogue?category=bathroom">Bathroom tiles</a></li>
+        <li><a href="/catalogue?category=kitchen">Kitchen tiles</a></li>
+        <li><a href="/catalogue?category=outdoor">Outdoor tiles</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Help</h4>
+      <ul>
+        <li><a href="/rooms">Room guide</a></li>
+        <li><a href="/offers">Current offers</a></li>
+        <li><a href="/stores">Find a store</a></li>
+        <li><a href="/contact">Get a quote</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Talk to us</h4>
+      <ul>
+        <li><a href="tel:{{phoneTel}}">{{phone}}</a></li>
+        <li><a href="mailto:{{email}}">{{email}}</a></li>
+        <li><a href="#" data-wa>Message on WhatsApp</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="wrap foot-base">
+    <span>&copy; <span id="year"></span> {{brand}}</span>
+    <a href="/admin">Staff login</a>
+  </div>
+</footer>
+
+<a class="wa-float" href="#" data-wa data-wa-text="Hi, I'd like some help choosing tiles." aria-label="Chat on WhatsApp">
+  <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M4 4h16v12H9l-5 4z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
+  <span>WhatsApp</span>
+</a>
+
+<div id="compare-tray" class="compare-tray" hidden>
+  <div class="wrap compare-inner">
+    <p id="compare-names"></p>
+    <div class="compare-btns">
+      <button type="button" class="btn btn-sm" id="compare-open">Compare</button>
+      <button type="button" class="link-btn" id="compare-clear">Clear</button>
+    </div>
+  </div>
+</div>
+
+<dialog id="compare-dialog" class="dialog dialog-wide" aria-labelledby="compare-title">
+  <div class="dialog-head">
+    <h2 id="compare-title">Compare tiles</h2>
+    <button type="button" class="link-btn" data-close>Close</button>
+  </div>
+  <div id="compare-body" class="compare-body"></div>
+</dialog>

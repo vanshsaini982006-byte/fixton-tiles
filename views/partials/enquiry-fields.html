@@ -1,0 +1,45 @@
+<div class="form-grid">
+  <div>
+    <label class="field-label" for="e-name">Your name *</label>
+    <input id="e-name" name="name" type="text" required minlength="2" maxlength="80" autocomplete="name">
+  </div>
+  <div>
+    <label class="field-label" for="e-phone">Phone *</label>
+    <input id="e-phone" name="phone" type="tel" required inputmode="tel" autocomplete="tel" maxlength="20" pattern="[0-9+ ]{10,20}" title="Enter a phone number with at least 10 digits, numbers only" placeholder="98765 43210">
+  </div>
+  <div>
+    <label class="field-label" for="e-email">Email</label>
+    <input id="e-email" name="email" type="email" maxlength="120" autocomplete="email">
+  </div>
+  <div>
+    <label class="field-label" for="e-city">City</label>
+    <input id="e-city" name="city" type="text" maxlength="60" autocomplete="address-level2">
+  </div>
+  <div>
+    <label class="field-label" for="e-customer">I am a</label>
+    <select id="e-customer" name="customerType">
+      <option value="">Choose one</option>
+      <option>Homeowner</option>
+      <option>Architect / Interior designer</option>
+      <option>Builder / Contractor</option>
+      <option>Dealer / Retailer</option>
+      <option>Other</option>
+    </select>
+  </div>
+  <div>
+    <label class="field-label" for="e-area">Area to cover (sqm)</label>
+    <input id="e-area" name="areaSqm" type="number" min="0.1" max="100000" step="any" inputmode="decimal" placeholder="Optional, e.g. 40">
+  </div>
+  <div class="full">
+    <label class="field-label" for="e-message">What do you need? *</label>
+    <textarea id="e-message" name="message" required minlength="5" maxlength="1000"></textarea>
+  </div>
+</div>
+<div class="hp" aria-hidden="true">
+  <label>Leave this empty <input name="website" type="text" tabindex="-1" autocomplete="off"></label>
+</div>
+<p class="form-status" role="alert"></p>
+<div class="form-actions">
+  <button class="btn" type="submit">Send enquiry</button>
+  <span class="muted" style="font-size:.82rem">We only use your details to reply to this enquiry.</span>
+</div>

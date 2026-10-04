@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+{{head}}
+<title>Room-wise Tile Guide - What Tiles Suit Each Room | {{brand}}</title>
+<meta name="description" content="Pick a room and see which tiles suit the floor, walls or splashback, with a short reason for each suggestion.">
+<!--head-extra-->
+</head>
+<body data-page="rooms">
+{{header}}
+
+<main id="main">
+  <div class="wrap">
+    <div class="page-title">
+      <div class="rule"></div>
+      <h1>Room <span class="gold">guide</span></h1>
+      <p>Pick a room. We will suggest tiles for each surface and tell you why they suit it.</p>
+    </div>
+
+    <div class="rooms-row" id="room-buttons" role="group" aria-label="Choose a room"></div>
+
+    <div class="room-prefs">
+      <div><label class="field-label" for="pref-colour">Colour you prefer</label><select id="pref-colour"></select></div>
+      <div><label class="field-label" for="pref-budget">Budget per sqm</label><select id="pref-budget"></select></div>
+    </div>
+
+    <p class="muted" id="room-blurb" style="margin-top:28px"></p>
+    <div id="room-results" aria-live="polite"></div>
+  </div>
+</main>
+
+{{footer}}
+{{scripts}}
+<script src="/js/rooms.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+{{head}}
+<title>Tile Collections - Floor, Wall, Bathroom, Kitchen &amp; Outdoor | {{brand}}</title>
+<meta name="description" content="Browse the full tile catalogue and filter by size, colour, finish, material, price and application. Compare tiles side by side and ask for a quote.">
+<!--head-extra-->
+</head>
+<body data-page="catalogue">
+{{header}}
+
+<main id="main">
+  <div class="wrap">
+    <div class="page-title">
+      <div class="rule"></div>
+      <h1>Our <span class="gold">collections</span></h1>
+      <p>Filter by size, colour, finish, material, price and where the tile will go. Tick Compare on up to three tiles to see them side by side.</p>
+    </div>
+
+    <div class="tabs" id="tabs" role="group" aria-label="Collection"></div>
+
+    <form class="filters" id="filters" aria-label="Filters" onsubmit="return false">
+      <div><label class="field-label" for="f-size">Size</label><select id="f-size" data-key="size"></select></div>
+      <div><label class="field-label" for="f-colour">Colour</label><select id="f-colour" data-key="colour"></select></div>
+      <div><label class="field-label" for="f-finish">Finish</label><select id="f-finish" data-key="finish"></select></div>
+      <div><label class="field-label" for="f-material">Material</label><select id="f-material" data-key="material"></select></div>
+      <div><label class="field-label" for="f-price">Price per sqm</label><select id="f-price" data-key="price"></select></div>
+      <div><label class="field-label" for="f-application">Application</label><select id="f-application" data-key="application"></select></div>
+    </form>
+
+    <div class="toolbar">
+      <div class="search">
+        <label class="field-label" for="search">Search</label>
+        <input type="search" id="search" placeholder="Try &quot;marble&quot;, &quot;anti-skid&quot; or &quot;600 x 600&quot;" autocomplete="off">
+      </div>
+      <div class="sort">
+        <label class="field-label" for="sort">Sort by</label>
+        <select id="sort">
+          <option value="featured">Featured first</option>
+          <option value="price-asc">Price: low to high</option>
+          <option value="price-desc">Price: high to low</option>
+          <option value="rating">Best rated</option>
+          <option value="newest">Newest</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="chips" id="chips"></div>
+    <p class="count" id="count" aria-live="polite"></p>
+
+    <div class="grid" id="grid"></div>
+    <div class="empty" id="empty" hidden>
+      <h3>No tiles match those filters</h3>
+      <p>Try removing one or two filters, or search for something broader.</p>
+      <button type="button" class="btn btn-ghost btn-sm" id="empty-clear">Clear all filters</button>
+    </div>
+    <div class="more"><button type="button" class="btn btn-ghost" id="more" hidden>Show more tiles</button></div>
+  </div>
+</main>
+
+{{footer}}
+{{scripts}}
+<script src="/js/catalogue.js" defer></script>
+</body>
+</html>

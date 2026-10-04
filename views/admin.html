@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+{{head}}
+<title>Staff area | {{brand}}</title>
+<meta name="description" content="Staff area.">
+<meta name="robots" content="noindex, nofollow">
+<!--head-extra-->
+</head>
+<body data-page="admin">
+{{header}}
+
+<main id="main">
+  <div class="wrap" style="padding-bottom:80px">
+    <div class="page-title">
+      <div class="rule"></div>
+      <h1>Staff <span class="gold">area</span></h1>
+    </div>
+
+    <form class="admin-login" id="login">
+      <label class="field-label" for="key">Admin key</label>
+      <input id="key" type="password" autocomplete="current-password" required>
+      <p class="form-status" id="login-status" role="alert"></p>
+      <div class="form-actions"><button class="btn" type="submit">Sign in</button></div>
+    </form>
+
+    <div id="panel" hidden>
+      <div class="tabs" role="group" aria-label="Section">
+        <button type="button" class="tab on" data-tab="enquiries">Enquiries <small id="n-enq"></small></button>
+        <button type="button" class="tab" data-tab="reviews">Reviews <small id="n-rev"></small></button>
+        <button type="button" class="link-btn" id="logout">Sign out</button>
+      </div>
+      <div id="enquiries" class="table-wrap"></div>
+      <div id="reviews" class="table-wrap" hidden></div>
+    </div>
+  </div>
+</main>
+
+{{footer}}
+{{scripts}}
+<script src="/js/admin.js" defer></script>
+</body>
+</html>
