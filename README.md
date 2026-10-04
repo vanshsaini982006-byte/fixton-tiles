@@ -1,5 +1,7 @@
 # Fixton Tiles - Smart Digital Tiles Platform
 
+Live Demo link: https://fixton-tiles.onrender.com
+
 A full-stack digital tiles platform developed as an internship project. The platform makes it easier for customers to explore tile collections, filter products, compare tiles, get room-wise recommendations, view product details, and submit enquiries online.
 
 The project is built using **Node.js, Express.js, HTML, CSS, and JavaScript**, with JSON-based data storage for simple local development and demonstration.
